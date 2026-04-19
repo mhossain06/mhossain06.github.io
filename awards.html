@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Awards &amp; Honors — Arif Hossain, Ph.D.</title>
+  <meta name="description" content="Awards, honors, scholarships, and research grants received by Dr. Arif Hossain in aerospace, mechanical engineering, and fluid dynamics."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+  <style>
+    /* ============================================================
+       AWARDS PAGE STYLES
+       ============================================================ */
+
+    .awards-section {
+      background: var(--color-bg);
+      padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+    }
+
+    /* ── Category group ── */
+    .awards-group {
+      margin-bottom: clamp(var(--space-12), 6vw, var(--space-20));
+    }
+    .awards-group-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-accent-2);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: var(--space-3);
+      margin-bottom: var(--space-8);
+      display: inline-block;
+    }
+
+    /* ── Award card ── */
+    .award-card {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-6);
+      padding: var(--space-6) var(--space-7);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      margin-bottom: var(--space-4);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .award-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    [data-theme="dark"] .award-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    /* ── Logo container ── */
+    .award-logo-wrap {
+      flex-shrink: 0;
+      width: 72px;
+      height: 72px;
+      border-radius: var(--radius-md);
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+      padding: 6px;
+    }
+    [data-theme="dark"] .award-logo-wrap {
+      background: #f0f0f0;
+    }
+    .award-logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .award-logo-wrap svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ── Award text ── */
+    .award-body {
+      flex: 1;
+      min-width: 0;
+    }
+    .award-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: var(--text-lg);
+      font-weight: 600;
+      color: var(--color-text);
+      margin: 0 0 var(--space-1) 0;
+      line-height: 1.35;
+    }
+    .award-meta {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin: 0 0 var(--space-2) 0;
+    }
+    .award-org {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+    [data-theme="dark"] .award-org {
+      color: #6aade0;
+    }
+    .award-year {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--color-accent);
+      color: #fff;
+      padding: 2px 10px;
+      border-radius: 999px;
+      margin-left: var(--space-2);
+      vertical-align: middle;
+    }
+    [data-theme="dark"] .award-year {
+      background: #2a5a8c;
+    }
+
+    /* ── Extra-curricular note ── */
+    .awards-extracurricular {
+      background: linear-gradient(135deg, var(--color-accent) 0%, #2a5a8c 100%);
+      border-radius: var(--radius-xl);
+      padding: var(--space-10) var(--space-10);
+      color: #fff;
+      margin-top: var(--space-12);
+      position: relative;
+      overflow: hidden;
+    }
+    .awards-extracurricular::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='28' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='1'/%3E%3C/svg%3E") repeat;
+      pointer-events: none;
+    }
+    .awards-extracurricular h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: var(--text-2xl);
+      font-weight: 600;
+      margin: 0 0 var(--space-4) 0;
+      color: #fff;
+    }
+    .awards-extracurricular p {
+      font-size: var(--text-base);
+      line-height: 1.7;
+      color: rgba(255,255,255,0.88);
+      margin: 0;
+      max-width: 680px;
+    }
+    .awards-extracurricular .gold-accent {
+      color: #ebb96a;
+      font-weight: 600;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .award-card {
+        flex-direction: column;
+        gap: var(--space-4);
+      }
+      .award-logo-wrap {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <svg class="nav-logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="2"/>
+          <circle cx="20" cy="20" r="6" fill="var(--color-accent)"/>
+          <circle cx="20" cy="8"  r="3" fill="var(--color-accent-2)"/>
+          <circle cx="32" cy="26" r="3" fill="var(--color-accent-2)"/>
+          <circle cx="8"  cy="26" r="3" fill="var(--color-accent-2)"/>
+          <line x1="20" y1="14" x2="20" y2="11"  stroke="var(--color-accent)" stroke-width="1.5"/>
+          <line x1="20" y1="26" x2="29" y2="23"  stroke="var(--color-accent)" stroke-width="1.5"/>
+          <line x1="20" y1="26" x2="11" y2="23"  stroke="var(--color-accent)" stroke-width="1.5"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">Arif Hossain</span>
+          <span class="nav-logo-sub">Ph.D. Mechanical Engineering</span>
+        </div>
+      </a>
+      <ul id="nav-menu" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="awards.html" aria-current="page">Awards</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button data-theme-toggle aria-label="Toggle dark mode"></button>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <img class="page-hero-bg-photo" src="img/hero-awards.png" alt="" aria-hidden="true"/>
+    <div class="page-hero-bg-overlay"></div>
+    <div class="container">
+      <div class="page-hero-inner fade-in">
+        <p class="section-label">Recognition &amp; Honors</p>
+        <h1 class="page-hero-title">Awards &amp; Grants</h1>
+        <p class="page-hero-desc">
+          A selection of awards, scholarships, and research grants received across academic and professional career in fluid dynamics, heat transfer, and aerospace engineering.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS CONTENT -->
+  <section class="awards-section" aria-label="Awards and Honors">
+    <div class="container">
+
+      <!-- ── Professional &amp; Conference Awards ── -->
+      <div class="awards-group fade-in">
+        <p class="awards-group-label">Professional &amp; Conference Awards</p>
+
+        <!-- AIAA Best Paper -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-6.png" alt="AIAA logo"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">AIAA Best Paper Award</h3>
+            <p class="award-meta">Orlando, FL</p>
+            <span class="award-org">American Institute of Aeronautics and Astronautics</span>
+            <span class="award-year">Jan 2020</span>
+          </div>
+        </div>
+
+        <!-- Ohio Supercomputer -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <!-- OSU inline SVG badge -->
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="36" cy="36" r="34" fill="#bb0000"/>
+              <text x="36" y="30" font-family="serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">THE</text>
+              <text x="36" y="43" font-family="serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">OHIO</text>
+              <text x="36" y="56" font-family="serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">STATE</text>
+              <circle cx="36" cy="36" r="33" fill="none" stroke="#fff" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Ohio Supercomputer Research Talk — First Place</h3>
+            <p class="award-meta">Columbus, OH</p>
+            <span class="award-org">Ohio Supercomputer Center, Ohio State University</span>
+            <span class="award-year">Apr 2019</span>
+          </div>
+        </div>
+
+        <!-- ASME IGTI Student Scholarship 2019 -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-5.png" alt="ASME IGTI logo"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">ASME IGTI Student Scholarship 2019</h3>
+            <p class="award-meta">American Society of Mechanical Engineers — International Gas Turbine Institute</p>
+            <span class="award-org">ASME IGTI</span>
+            <span class="award-year">Jan 2019</span>
+          </div>
+        </div>
+
+        <!-- ASME IGTI Young Engineers Award 2018 -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-5.png" alt="ASME IGTI logo"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">ASME IGTI Young Engineers Award 2018</h3>
+            <p class="award-meta">Oslo, Norway</p>
+            <span class="award-org">ASME — International Gas Turbine Institute</span>
+            <span class="award-year">Jun 2018</span>
+          </div>
+        </div>
+
+        <!-- ASME Young Engineers Paper (YEP) Award -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <!-- ASME circular seal SVG -->
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="36" cy="36" r="34" fill="#c1272d"/>
+              <circle cx="36" cy="36" r="28" fill="none" stroke="#fff" stroke-width="1.5"/>
+              <text x="36" y="32" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">ASME</text>
+              <text x="36" y="46" font-family="Arial, sans-serif" font-size="7" fill="#fff" text-anchor="middle">YEP AWARD</text>
+              <circle cx="36" cy="36" r="33" fill="none" stroke="#fff" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">ASME Young Engineers Paper (YEP) Award</h3>
+            <p class="award-meta">Montreal, Canada — ASME IMECE 2014</p>
+            <span class="award-org">American Society of Mechanical Engineers</span>
+            <span class="award-year">Nov 2014</span>
+          </div>
+        </div>
+
+      </div><!-- /.awards-group -->
+
+      <!-- ── Research Grants &amp; Assistantships ── -->
+      <div class="awards-group fade-in">
+        <p class="awards-group-label">Research Grants &amp; Assistantships</p>
+
+        <!-- NETL Research Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <!-- DOE/NETL SVG -->
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <rect width="72" height="72" rx="8" fill="#003087"/>
+              <text x="36" y="28" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">DOE</text>
+              <text x="36" y="42" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" fill="#6ab0e0" text-anchor="middle">NETL</text>
+              <text x="36" y="56" font-family="Arial, sans-serif" font-size="5.5" fill="#aaccee" text-anchor="middle">US DEPT OF ENERGY</text>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">National Energy Technology Laboratory Research Grant</h3>
+            <p class="award-meta">Department of Energy</p>
+            <span class="award-org">US Department of Energy — NETL</span>
+            <span class="award-year">Aug 2015</span>
+          </div>
+        </div>
+
+        <!-- Army Research Lab Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <!-- US Army / ARL SVG -->
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <rect width="72" height="72" rx="8" fill="#1a1a1a"/>
+              <text x="36" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#c8a400" text-anchor="middle">ARL</text>
+              <text x="36" y="42" font-family="Arial, sans-serif" font-size="5.5" fill="#fff" text-anchor="middle">ARMY RESEARCH</text>
+              <text x="36" y="52" font-family="Arial, sans-serif" font-size="5.5" fill="#fff" text-anchor="middle">LABORATORY</text>
+              <rect x="8" y="57" width="56" height="2" fill="#c8a400" rx="1"/>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Army Research Lab Research Grant</h3>
+            <p class="award-meta">Graduate Research Assistantship</p>
+            <span class="award-org">US Army Research Laboratory</span>
+            <span class="award-year">May 2013–May 2015</span>
+          </div>
+        </div>
+
+        <!-- NSF CREST Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-7.png" alt="NSF logo"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">NSF CREST Research Grant</h3>
+            <p class="award-meta">Graduate Research Assistantship — Center for Research Excellence in Science and Technology</p>
+            <span class="award-org">National Science Foundation</span>
+            <span class="award-year">Aug 2012</span>
+          </div>
+        </div>
+
+      </div><!-- /.awards-group -->
+
+      <!-- ── Travel Grants ── -->
+      <div class="awards-group fade-in">
+        <p class="awards-group-label">Travel Grants</p>
+
+        <!-- OSU Travel Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="36" cy="36" r="34" fill="#bb0000"/>
+              <text x="36" y="30" font-family="serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">THE</text>
+              <text x="36" y="43" font-family="serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">OHIO</text>
+              <text x="36" y="56" font-family="serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">STATE</text>
+              <circle cx="36" cy="36" r="33" fill="none" stroke="#fff" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">OSU Mechanical Open House Travel Grant</h3>
+            <p class="award-meta">Columbus, OH</p>
+            <span class="award-org">Ohio State University</span>
+            <span class="award-year">Mar 2015</span>
+          </div>
+        </div>
+
+        <!-- Northeastern Travel Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-1.png" alt="Northeastern University seal"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Northeastern University Engineering Day Travel Grant</h3>
+            <p class="award-meta">Boston, MA</p>
+            <span class="award-org">Northeastern University</span>
+            <span class="award-year">Mar 2015</span>
+          </div>
+        </div>
+
+        <!-- ASME IGTI Turbo Expo 2015 Travel Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-5.png" alt="ASME IGTI logo"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">ASME IGTI Turbo Expo 2015 Travel Grant</h3>
+            <p class="award-meta">Montreal, Canada</p>
+            <span class="award-org">ASME International Gas Turbine Institute</span>
+            <span class="award-year">Jun 2015</span>
+          </div>
+        </div>
+
+        <!-- ASME IMECE 2014 Travel Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-5.png" alt="ASME logo"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">ASME IMECE 2014 Travel Grant</h3>
+            <p class="award-meta">Montreal, Canada</p>
+            <span class="award-org">American Society of Mechanical Engineers</span>
+            <span class="award-year">Nov 2014</span>
+          </div>
+        </div>
+
+        <!-- UTEP Graduate School Travel Scholarship -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-4.jpg" alt="UTEP logo"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">UTEP Graduate School Travel Scholarship</h3>
+            <p class="award-meta">University of Texas at El Paso</p>
+            <span class="award-org">UTEP Graduate School</span>
+            <span class="award-year">Nov 2014</span>
+          </div>
+        </div>
+
+        <!-- Purdue Big 10 Graduate Expo Travel Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <!-- Purdue SVG badge -->
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <rect width="72" height="72" rx="8" fill="#1a1a1a"/>
+              <text x="36" y="44" font-family="Arial Black, sans-serif" font-size="36" font-weight="900" fill="#c28b00" text-anchor="middle">P</text>
+              <text x="36" y="62" font-family="Arial, sans-serif" font-size="6" fill="#fff" text-anchor="middle">PURDUE</text>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Purdue Big 10 Graduate Expo Travel Grant</h3>
+            <p class="award-meta">Purdue University, West Lafayette, IN</p>
+            <span class="award-org">Purdue University</span>
+            <span class="award-year">2013, 2014</span>
+          </div>
+        </div>
+
+        <!-- Roy G. / Prairie View A&M Travel Grant -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-3.png" alt="Prairie View A&amp;M University seal"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Roy G. College of Engineering Travel Grant</h3>
+            <p class="award-meta">Prairie View A&amp;M University, Texas</p>
+            <span class="award-org">Prairie View A&amp;M University</span>
+            <span class="award-year">Dec 2012</span>
+          </div>
+        </div>
+
+        <!-- Bangladesh-Sweden Trust Fund -->
+        <div class="award-card">
+          <div class="award-logo-wrap" style="gap:2px; flex-direction:column;">
+            <div style="display:flex; gap:4px; width:100%; justify-content:center;">
+              <img src="img/award-logo-bangladesh-flag.png" alt="Bangladesh flag" style="width:46%; height:auto; object-fit:contain;"/>
+              <img src="img/award-logo-sweden-flag.png" alt="Sweden flag" style="width:46%; height:auto; object-fit:contain;"/>
+            </div>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Bangladesh-Sweden Trust Fund</h3>
+            <p class="award-meta">Travel grant for higher education abroad</p>
+            <span class="award-org">Bangladesh-Sweden Trust Fund</span>
+            <span class="award-year">2014</span>
+          </div>
+        </div>
+
+      </div><!-- /.awards-group -->
+
+      <!-- ── Academic Scholarships ── -->
+      <div class="awards-group fade-in">
+        <p class="awards-group-label">Academic Scholarships &amp; Merit Awards</p>
+
+        <!-- Dean's Award BUET -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <!-- BUET SVG seal -->
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="36" cy="36" r="34" fill="#1a3a5c"/>
+              <text x="36" y="28" font-family="serif" font-size="9" font-weight="bold" fill="#c9822a" text-anchor="middle">BUET</text>
+              <text x="36" y="40" font-family="serif" font-size="6" fill="#fff" text-anchor="middle">BANGLADESH</text>
+              <text x="36" y="50" font-family="serif" font-size="6" fill="#fff" text-anchor="middle">UNIV. OF ENG.</text>
+              <text x="36" y="60" font-family="serif" font-size="6" fill="#fff" text-anchor="middle">&amp; TECH.</text>
+              <circle cx="36" cy="36" r="33" fill="none" stroke="#c9822a" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Dean's Award</h3>
+            <p class="award-meta">For academic excellence</p>
+            <span class="award-org">Bangladesh University of Engineering and Technology (BUET)</span>
+            <span class="award-year">2010, 2011</span>
+          </div>
+        </div>
+
+        <!-- UGC Merit Scholarship -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-2.png" alt="Bangladesh government emblem"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">University Grant Commission (UGC) Merit Scholarship</h3>
+            <p class="award-meta">National merit scholarship for outstanding academic performance</p>
+            <span class="award-org">University Grants Commission of Bangladesh</span>
+            <span class="award-year">Jun 2010</span>
+          </div>
+        </div>
+
+        <!-- BUET Merit Scholarship -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="36" cy="36" r="34" fill="#1a3a5c"/>
+              <text x="36" y="28" font-family="serif" font-size="9" font-weight="bold" fill="#c9822a" text-anchor="middle">BUET</text>
+              <text x="36" y="40" font-family="serif" font-size="6" fill="#fff" text-anchor="middle">BANGLADESH</text>
+              <text x="36" y="50" font-family="serif" font-size="6" fill="#fff" text-anchor="middle">UNIV. OF ENG.</text>
+              <text x="36" y="60" font-family="serif" font-size="6" fill="#fff" text-anchor="middle">&amp; TECH.</text>
+              <circle cx="36" cy="36" r="33" fill="none" stroke="#c9822a" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">BUET Merit Scholarship</h3>
+            <p class="award-meta">Awarded at all academic levels for outstanding performance</p>
+            <span class="award-org">Bangladesh University of Engineering and Technology (BUET)</span>
+            <span class="award-year">2007–2012</span>
+          </div>
+        </div>
+
+        <!-- Bangladesh Government Merit Scholarship -->
+        <div class="award-card">
+          <div class="award-logo-wrap">
+            <img src="img/award-logo-2.png" alt="Bangladesh government emblem"/>
+          </div>
+          <div class="award-body">
+            <h3 class="award-title">Government Merit Scholarship</h3>
+            <p class="award-meta">National scholarship for academic excellence at all levels</p>
+            <span class="award-org">Government of Bangladesh</span>
+            <span class="award-year">2000–2012</span>
+          </div>
+        </div>
+
+      </div><!-- /.awards-group -->
+
+      <!-- ── Extra-Curricular note ── -->
+      <div class="awards-extracurricular fade-in">
+        <h3>Extra-Curricular Achievements</h3>
+        <p>
+          Active member of different national and cultural organizations throughout the academic career.
+          Recipient of <span class="gold-accent">40+ awards</span> at national and divisional levels in
+          <span class="gold-accent">debate</span>, <span class="gold-accent">mathematics olympiad</span>,
+          <span class="gold-accent">athletics</span>, and <span class="gold-accent">drawing</span> competitions
+          — reflecting a broad commitment to excellence beyond the laboratory.
+        </p>
+      </div>
+
+    </div><!-- /.container -->
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div><p class="footer-brand-name">Arif Hossain, Ph.D.</p><p class="footer-brand-desc">Experimental fluid dynamics · Heat and Mass Transfer · CFD · Mixing and Spray</p></div>
+      <div><p class="footer-col-title">Navigate</p><ul class="footer-links" role="list"><li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="awards.html">Awards</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><p class="footer-col-title">Contact</p><ul class="footer-links" role="list"><li><a href="mailto:arifme06@gmail.com">arifme06@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="footer-year"></span> Arif Hossain. All rights reserved.</span></div>
+  </div>
+</footer>
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
