@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team — Your Lab Name</title>
+  <meta name="description" content="Meet the team at [Your Lab Name], [Your University]."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container"><div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="2"/>
+        <circle cx="20" cy="20" r="6" fill="var(--color-accent)"/>
+        <circle cx="20" cy="8"  r="3" fill="var(--color-accent-2)"/>
+        <circle cx="32" cy="26" r="3" fill="var(--color-accent-2)"/>
+        <circle cx="8"  cy="26" r="3" fill="var(--color-accent-2)"/>
+        <line x1="20" y1="14" x2="20" y2="11"  stroke="var(--color-accent)" stroke-width="1.5"/>
+        <line x1="20" y1="26" x2="29" y2="23"  stroke="var(--color-accent)" stroke-width="1.5"/>
+        <line x1="20" y1="26" x2="11" y2="23"  stroke="var(--color-accent)" stroke-width="1.5"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-title">Your Lab Name</span>
+        <span class="nav-logo-sub">Est. 2021 · Your University</span>
+      </div>
+    </a>
+    <ul id="nav-menu" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button data-theme-toggle aria-label="Toggle dark mode"></button>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div></div>
+</nav>
+
+<main>
+
+  <!-- Page header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner fade-in">
+        <span class="section-label">The People</span>
+        <h1 class="page-hero-title">Our Team</h1>
+        <p class="page-hero-desc">
+          We are a diverse group of scientists passionate about [research mission].
+          We welcome students and researchers from all backgrounds.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-page">
+    <div class="container">
+
+      <!-- =================== PRINCIPAL INVESTIGATOR =================== -->
+      <div class="team-group-label fade-in">Principal Investigator</div>
+      <div id="pi" class="pi-full-card fade-in">
+        <div class="pi-full-photo-wrap">
+          <!-- ===== Replace with actual photo: <img src="img/pi.jpg" alt="Dr. Your Name" class="pi-full-photo"> ===== -->
+          <div class="team-photo-placeholder large">
+            <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <circle cx="40" cy="30" r="18" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+              <path d="M10 75c0-16.6 13.4-30 30-30s30 13.4 30 30" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pi-full-content">
+          <!-- ===== Edit PI name and title ===== -->
+          <h2 class="team-member-name pi-full-name">Dr. [Your Full Name]</h2>
+          <p class="team-member-role">[Assistant/Associate/Full] Professor of [Department]<br/>[Your University]</p>
+          <!-- ===== Edit PI bio — can be multiple paragraphs ===== -->
+          <p class="pi-full-bio">
+            [Paragraph 1 — Where did you do your PhD and postdoc? What is your
+            academic background? E.g., "Dr. [Name] received her B.Sc. from [University]
+            and her Ph.D. from [University] with Professor [Name], where she studied [topic]."]
+          </p>
+          <p class="pi-full-bio">
+            [Paragraph 2 — What are your current research interests and what motivates your work?
+            What do you hope your lab will accomplish? Feel free to mention any awards,
+            fellowships, or recognitions.]
+          </p>
+          <div class="team-member-links">
+            <!-- ===== Edit PI external links ===== -->
+            <a href="#" class="team-link" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="#" class="team-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" class="team-link" target="_blank" rel="noopener">Twitter/X</a>
+            <a href="mailto:pi@university.edu" class="team-link">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================== GRADUATE STUDENTS =================== -->
+      <div class="team-group-label fade-in">Graduate Students</div>
+      <div class="team-grid">
+
+        <!-- ===== Team Member Card — duplicate this block to add members ===== -->
+        <article class="team-card fade-in">
+          <div class="team-photo-wrap">
+            <!-- Replace with: <img src="img/student1.jpg" alt="[Name]" class="team-photo"> -->
+            <div class="team-photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <circle cx="40" cy="30" r="18" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+                <path d="M10 75c0-16.6 13.4-30 30-30s30 13.4 30 30" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <!-- ===== Edit member name, role, joined year, bio ===== -->
+          <h3 class="team-member-name">[Student Name]</h3>
+          <p class="team-member-role">Ph.D. Student</p>
+          <p class="team-member-joined">Joined [Year]</p>
+          <p class="team-member-bio">
+            [Brief bio — e.g., B.S. from [University]. Working on [brief project description].
+            Interested in [research interests].]
+          </p>
+          <div class="team-member-links">
+            <a href="#" class="team-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:student@university.edu" class="team-link">Email</a>
+          </div>
+        </article>
+
+        <!-- Student 2 -->
+        <article class="team-card fade-in">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <circle cx="40" cy="30" r="18" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+                <path d="M10 75c0-16.6 13.4-30 30-30s30 13.4 30 30" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="team-member-name">[Student Name]</h3>
+          <p class="team-member-role">Ph.D. Student</p>
+          <p class="team-member-joined">Joined [Year]</p>
+          <p class="team-member-bio">[Brief bio for student 2.]</p>
+          <div class="team-member-links">
+            <a href="#" class="team-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:student2@university.edu" class="team-link">Email</a>
+          </div>
+        </article>
+
+        <!-- Student 3 -->
+        <article class="team-card fade-in">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <circle cx="40" cy="30" r="18" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+                <path d="M10 75c0-16.6 13.4-30 30-30s30 13.4 30 30" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="team-member-name">[Student Name]</h3>
+          <p class="team-member-role">Ph.D. Student</p>
+          <p class="team-member-joined">Joined [Year]</p>
+          <p class="team-member-bio">[Brief bio for student 3.]</p>
+          <div class="team-member-links">
+            <a href="#" class="team-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:student3@university.edu" class="team-link">Email</a>
+          </div>
+        </article>
+
+      </div><!-- end .team-grid -->
+
+      <!-- =================== POSTDOCTORAL RESEARCHERS =================== -->
+      <div class="team-group-label fade-in">Postdoctoral Researchers</div>
+      <div class="team-grid">
+
+        <article class="team-card fade-in">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <circle cx="40" cy="30" r="18" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+                <path d="M10 75c0-16.6 13.4-30 30-30s30 13.4 30 30" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="team-member-name">[Postdoc Name]</h3>
+          <p class="team-member-role">Postdoctoral Researcher</p>
+          <p class="team-member-joined">Joined [Year]</p>
+          <p class="team-member-bio">[Brief postdoc bio — background, PhD from where, current project.]</p>
+          <div class="team-member-links">
+            <a href="#" class="team-link" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:postdoc@university.edu" class="team-link">Email</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- =================== UNDERGRADUATE RESEARCHERS =================== -->
+      <div class="team-group-label fade-in">Undergraduate Researchers</div>
+      <div class="team-grid">
+
+        <article class="team-card fade-in">
+          <div class="team-photo-wrap">
+            <div class="team-photo-placeholder">
+              <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <circle cx="40" cy="30" r="18" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+                <path d="M10 75c0-16.6 13.4-30 30-30s30 13.4 30 30" fill="var(--color-accent-light)" stroke="var(--color-accent)" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="team-member-name">[Undergrad Name]</h3>
+          <p class="team-member-role">Undergraduate Researcher</p>
+          <p class="team-member-joined">Joined [Year]</p>
+          <p class="team-member-bio">[Brief bio — major, year, project they're working on.]</p>
+          <div class="team-member-links">
+            <a href="mailto:undergrad@university.edu" class="team-link">Email</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- =================== ALUMNI =================== -->
+      <div class="team-group-label fade-in">Alumni</div>
+      <div class="alumni-list fade-in">
+        <p class="text-muted" style="font-size:var(--text-sm);">
+          [When alumni graduate, move their entries here with their current position.]
+        </p>
+        <ul class="alumni-items" role="list">
+          <!-- ===== Edit alumni entries ===== -->
+          <li class="alumni-item">
+            <span class="alumni-name">[Alumnus Name]</span>
+            <span class="alumni-degree">Ph.D. [Year]</span>
+            <span class="alumni-now">→ [Current position, e.g., Postdoc at MIT]</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Join CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <h2 class="cta-title">Interested in joining?</h2>
+        <p class="cta-desc">
+          We welcome applications from motivated Ph.D. students, postdocs, and undergraduates
+          with a passion for [research area]. Get in touch to learn about openings.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div><p class="footer-brand-name">Your Lab Name</p><p class="footer-brand-desc">Developing [tools/methods] at the interface of [field A] and [field B].</p></div>
+      <div><p class="footer-col-title">Navigate</p><ul class="footer-links" role="list"><li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="team.html">Team</a></li><li><a href="publications.html">Publications</a></li></ul></div>
+      <div><p class="footer-col-title">Resources</p><ul class="footer-links" role="list"><li><a href="teaching.html">Teaching</a></li><li><a href="contact.html">Contact</a></li><li><a href="#" target="_blank" rel="noopener">Google Scholar</a></li></ul></div>
+      <div><p class="footer-col-title">Location</p><ul class="footer-links" role="list"><li>Department of [Your Dept]</li><li>Your University</li><li><a href="mailto:pi@university.edu">pi@university.edu</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="footer-year"></span> Your Lab Name.</span></div>
+  </div>
+</footer>
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>

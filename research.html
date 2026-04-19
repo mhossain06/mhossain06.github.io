@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research — Arif Hossain, Ph.D.</title>
+  <meta name="description" content="Research by Dr. Arif Hossain in turbine cooling, CFD, combustion, spray and mixing, and multiphase flow."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+  <link rel="stylesheet" href="css/research-page.css"/>
+</head>
+<body>
+
+<nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container"><div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="2"/>
+        <circle cx="20" cy="20" r="6" fill="var(--color-accent)"/>
+        <circle cx="20" cy="8"  r="3" fill="var(--color-accent-2)"/>
+        <circle cx="32" cy="26" r="3" fill="var(--color-accent-2)"/>
+        <circle cx="8"  cy="26" r="3" fill="var(--color-accent-2)"/>
+        <line x1="20" y1="14" x2="20" y2="11" stroke="var(--color-accent)" stroke-width="1.5"/>
+        <line x1="20" y1="26" x2="29" y2="23" stroke="var(--color-accent)" stroke-width="1.5"/>
+        <line x1="20" y1="26" x2="11" y2="23" stroke="var(--color-accent)" stroke-width="1.5"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-title">Arif Hossain</span>
+        <span class="nav-logo-sub">Ph.D. Mechanical Engineering</span>
+      </div>
+    </a>
+    <ul id="nav-menu" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button data-theme-toggle aria-label="Toggle dark mode"></button>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div></div>
+</nav>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner fade-in">
+        <span class="section-label">Research</span>
+        <h1 class="page-hero-title">Research Projects</h1>
+        <p class="page-hero-desc">
+          A comprehensive overview of my research in turbine aerothermodynamics, fluidic oscillators,
+          CFD simulation, combustion, spray and mixing, and related fields spanning graduate study and professional work.
+        </p>
+        <div class="pub-filter-bar">
+          <a href="#turbine-cooling" class="pub-filter active">Heat Transfer</a>
+          <a href="#cfd-flow" class="pub-filter">CFD &amp; Flow</a>
+          <a href="#combustion-multiphase" class="pub-filter">Combustion and Multiphase</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-page">
+    <div class="container">
+
+      <!-- ======= GROUP: TURBINE COOLING ======= -->
+      <div class="research-group-label" id="turbine-cooling">Turbine Cooling &amp; Heat Transfer</div>
+
+      <!-- 01 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="dmls-ngv">
+        <div class="research-entry-header">
+          <span class="research-entry-num">01</span>
+          <div>
+            <h2 class="research-entry-title">DMLS Enabled Turbine Nozzle Guide Vane</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">DMLS</span>
+              <span class="research-tag">Film Cooling</span>
+              <span class="research-tag">Additive Manufacturing</span>
+              <span class="research-tag">Engine-Scale Testing</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Design, validation, and fabrication via Direct Metal Laser Sintering (DMLS) of a gas turbine nozzle guide vane (NGV) incorporating three innovative cooling schemes enabled by additive manufacturing. The novel SJ-vane combines sweeping jet film cooling on the suction surface, sweeping jet impingement at the leading edge, and double-wall partial-length triangular pin-fin with impinging jet at the trailing edge. Tested at the OSU Turbine Reacting Flow Rig at engine-relevant temperature (1375 K) and Mach conditions, showing improved cooling performance vs. baseline configurations.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Ameri, A., Gregory, J., Bons, J.P., <em>ASME J. Turbomach.</em> 2021; 143(5):051004. <a href="https://doi.org/10.1115/1.4049618" target="_blank" rel="noopener">doi:10.1115/1.4049618</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/DMLS-Enabled-Turbine-Nozzle-Guide-Vane.jpg" alt="DMLS Enabled Turbine Nozzle Guide Vane" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="sj-transonic">
+        <div class="research-entry-header">
+          <span class="research-entry-num">02</span>
+          <div>
+            <h2 class="research-entry-title">Sweeping Jet Film Cooling on a Transonic Turbine Cascade</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Transonic Cascade</span>
+              <span class="research-tag">IR Thermography</span>
+              <span class="research-tag">DLRT</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              First demonstration of sweeping jet (SJ) film cooling at engine-relevant Mach number on a nozzle guide vane suction surface using SLA-fabricated transonic vane geometry. Experiments at exit Mach 0.8 and blowing ratios BR = 0.25–2.23. Heat transfer measured using transient IR and a dual linear regression technique (DLRT). The SJ hole showed wider lateral coolant spreading, improving performance at high blowing ratios (BR &gt; 1), with comparable aerodynamic loss to the 777-shaped hole.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Asar, M.E., Gregory, J., Bons, J.P., <em>ASME J. Turbomach.</em> 2019; 142(4):041009. <a href="https://doi.org/10.1115/1.4046548" target="_blank" rel="noopener">doi:10.1115/1.4046548</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Sweeping-Jet-Film-Cooling-on-a-Transonic-Turbine-Cascade.jpg" alt="Sweeping Jet Film Cooling on a Transonic Turbine Cascade" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="les-sj">
+        <div class="research-entry-header">
+          <span class="research-entry-num">03</span>
+          <div>
+            <h2 class="research-entry-title">Large Eddy Simulation (LES) of Sweeping Jet Film Cooling at High Blowing Ratio</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">LES</span>
+              <span class="research-tag">High Blowing Ratio</span>
+              <span class="research-tag">Freestream Turbulence</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Experimental and numerical study of high blowing ratio and high freestream turbulence effects on sweeping jet film cooling (BR = 0.5–3.5, Tu = 0.6% and 14.3%). IR thermography measured adiabatic cooling effectiveness; boundary layer measurement confirmed lower jet momentum than a 777-shaped hole, keeping coolant closer to the wall. LES for both hole types revealed that the 777-shaped hole undergoes jet lift-off at high BR due to strong jetting action, while the sweeping jet does not.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Ameri, A., Gregory, J., Bons, J.P., <em>ASME J. Turbomach.</em> 2020; 142(12):121010. <a href="https://doi.org/10.1115/1.4047396" target="_blank" rel="noopener">doi:10.1115/1.4047396</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Large-Eddy-Simulation-LES-of-Sweeping-Jet-Film-Cooling-at-High-Blowing-Ratio.jpg" alt="LES of Sweeping Jet Film Cooling" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="sj-vane">
+        <div class="research-entry-header">
+          <span class="research-entry-num">04</span>
+          <div>
+            <h2 class="research-entry-title">Sweeping Jet Film Cooling on a Turbine Vane</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Low-Speed Cascade</span>
+              <span class="research-tag">Net Heat Flux</span>
+              <span class="research-tag">Total Pressure Loss</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Cooling performance of sweeping jet film cooling on a turbine vane suction surface in a low-speed linear cascade wind tunnel. IR thermography measured adiabatic film effectiveness at multiple blowing ratios and two freestream turbulence levels (Tu = 0.3% and 6.1%). Convective heat transfer coefficient measured by transient IR; net heat flux benefit calculated. SJ holes showed higher adiabatic film effectiveness in the near-hole region than 777-shaped holes, with a 12% total pressure loss increase at BR = 1.5.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Agricola, L.M., Ameri, A., Gregory, J., Bons, J.P., <em>ASME J. Turbomach.</em> 2019; 141(3):031007. <a href="https://doi.org/10.1115/1.4042070" target="_blank" rel="noopener">doi:10.1115/1.4042070</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Sweeping-Jet-Film-Cooling-on-a-Turbine-Vane.jpg" alt="Sweeping Jet Film Cooling on a Turbine Vane" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="exp-num-sj">
+        <div class="research-entry-header">
+          <span class="research-entry-num">05</span>
+          <div>
+            <h2 class="research-entry-title">Experimental &amp; Numerical Investigation of Sweeping Jet Film Cooling</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">URANS</span>
+              <span class="research-tag">Adiabatic Effectiveness</span>
+              <span class="research-tag">CRVP</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Companion experimental and numerical study of 5 sweeping jet film cooling holes (AR = 1, P/D = 8.5). Adiabatic film effectiveness, thermal field, convective HTC, and discharge coefficient measured at Tu = 0.4% and 10.1%, blowing ratios M = 0.98–3.96 (DR = 1.04). Unsteady RANS revealed two alternating streamwise vortices at all blowing ratios — opposite in rotation sense to the traditional CRVP found in steady jet-in-crossflow — the key mechanism driving lateral coolant spreading.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Prenter, R., Lundgreen, R., Ameri, A., Gregory, J., Bons, J.P., <em>ASME J. Turbomach.</em> 2017; 140(3):031009. <a href="https://doi.org/10.1115/1.4038690" target="_blank" rel="noopener">doi:10.1115/1.4038690</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Experimental-Numerical-Investigation-of-Sweeping-Jet-Film-Cooling.jpg" alt="Experimental and Numerical Investigation of Sweeping Jet Film Cooling" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="double-wall-pin">
+        <div class="research-entry-header">
+          <span class="research-entry-num">06</span>
+          <div>
+            <h2 class="research-entry-title">Innovative Double-Wall Pin-Fin-Jet for Internal Cooling</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Conjugate Heat Transfer</span>
+              <span class="research-tag">Pin-Fin</span>
+              <span class="research-tag">Impingement</span>
+              <span class="research-tag">Additive Manufacturing</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              A double-wall cooling concept combining impinging jet and partial-length pin-fins for advanced gas turbine internal cooling. The impinging jet provides internal cooling while pin-fins reduce induced cross-flow and augment local heat transfer. Partial-length pin-fins recover some pressure loss penalty. Additive manufacturing enables integration of this compact design. Conjugate heat transfer simulations evaluated multiple innovative pin-fin configurations for next-generation gas turbine engines.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Ameri, A., Bons, J.P., <em>AIAA J. Propulsion and Power</em> 2021; 37(4):604–614. <a href="https://doi.org/10.2514/1.B37980" target="_blank" rel="noopener">doi:10.2514/1.B37980</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Innovative-Double-Wall-Pin-Fin-Jet-for-Internal-Cooling.jpg" alt="Double-Wall Pin-Fin-Jet for Internal Cooling" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 — no image -->
+      <article class="research-entry fade-in" id="leading-edge-imp">
+        <div class="research-entry-header">
+          <span class="research-entry-num">07</span>
+          <div>
+            <h2 class="research-entry-title">Leading-Edge Impingement Cooling (Sweeping Jet)</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Leading Edge</span>
+              <span class="research-tag">Biot Number Matching</span>
+              <span class="research-tag">Overall Effectiveness</span>
+            </p>
+          </div>
+        </div>
+        <p class="research-entry-body">
+          A low-speed linear cascade was used to investigate sweeping jet impingement cooling in a nozzle guide vane leading edge at engine-relevant Biot number. Both sweeping and steady jets were studied at varying mass flow rates and freestream turbulence intensities. IR thermography and a thermal inertia technique determined overall cooling effectiveness and internal heat transfer coefficients. The circular jet array provided higher overall effectiveness; sweeping jet provided a broader heat transfer profile with lower pressure drop.
+        </p>
+        <p class="research-entry-ref">
+          Agricola, L.M., Hossain, M.A., Ameri, A., Gregory, J., Bons, J.P., ASME Turbo Expo 2018, GT2018-77073.
+        </p>
+      </article>
+
+      <!-- 08 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="sj-imp-curved">
+        <div class="research-entry-header">
+          <span class="research-entry-num">08</span>
+          <div>
+            <h2 class="research-entry-title">Sweeping Jet Impingement Cooling on Turbine Leading Edge (Matched Biot Approach)</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Cylinder Model</span>
+              <span class="research-tag">Aspect Ratio Study</span>
+              <span class="research-tag">Jet Spacing</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Experiments in a low-speed wind tunnel investigated sweeping jet impingement cooling on a faired cylinder leading edge at engine-relevant Biot number. Both sweeping and steady jets were studied at varying mass flow rates, jet-to-wall spacing (H/D), jet pitch (P/D), and freestream turbulence. At H/D = 5, the sweeping action dominates and cooling effectiveness improves significantly. High AR (unity) and tight pitch (P/D = 4) produce best performance. Sweeping jet shows smaller pressure drop than steady jet at equivalent mass flow rates.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Agricola, L.M., Ameri, A., Gregory, J., Bons, J.P., <em>J. Global Power and Propulsion Society</em> 2018; 2:402–414. <a href="https://doi.org/10.22261/JGPPS.5A7OAZ" target="_blank" rel="noopener">doi:10.22261/JGPPS.5A7OAZ</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Sweeping-Jet-Impingement-Cooling-on-Turbine-Leading-Edge-Matched-Biot-Approach.jpg" alt="Sweeping Jet Impingement Cooling on Turbine Leading Edge" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- ======= GROUP: CFD & FLOW ======= -->
+      <div class="research-group-label" id="cfd-flow">CFD, Flow Control &amp; Fluidic Oscillators</div>
+
+      <!-- 09 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="curvature-imp">
+        <div class="research-entry-header">
+          <span class="research-entry-num">09</span>
+          <div>
+            <h2 class="research-entry-title">Curvature Effect on Sweeping Jet Impingement</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">URANS</span>
+              <span class="research-tag">Surface Curvature</span>
+              <span class="research-tag">Nusselt Number</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Numerical study of curvature effects on sweeping jet impingement heat transfer. Three curvature configurations (flat, R = 20Dh, R = 10Dh) were studied for both steady and sweeping jets at three jet-to-wall spacings (H/D = 3, 5, 8). Unsteady RANS validated by oscillation frequency and local Nusselt number distributions. Results show heat transfer augments with curvature for steady jets; sweeping jet shows non-monotonic behavior — best Nu-distribution at moderate curvature (R = 20Dh) where the jet remains normal to the wall during oscillation.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Agricola, L.M., Ameri, A., Gregory, J., Bons, J.P., 56th AIAA Aerospace Sciences Meeting, 2018. <a href="https://doi.org/10.2514/6.2018-0243" target="_blank" rel="noopener">doi:10.2514/6.2018-0243</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Curvature-Effect-on-Sweeping-Jet-Impingement.jpg" alt="Curvature Effect on Sweeping Jet Impingement" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="fan-angle">
+        <div class="research-entry-header">
+          <span class="research-entry-num">10</span>
+          <div>
+            <h2 class="research-entry-title">Fan Angle Effect on Sweeping Jet Impingement Cooling</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Exit Fan Angle</span>
+              <span class="research-tag">Uniformity Index</span>
+              <span class="research-tag">Discharge Coefficient</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Numerical study of sweeping jet exit fan angle effects on impingement heat transfer. Eight exit fan angles were studied at three jet-to-wall spacings (H/D = 3, 5, 8) and three coolant mass flow rates. A new cooling uniformity index evaluates heat transfer distribution. Fan angle significantly affects local surface Nu distribution; sweeping action augments turbulence in the jet shear layer. Separated flow was observed at large exit angles. Discharge coefficients calculated for all exit angle configurations.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Ameri, A., Gregory, J., Bons, J.P., <em>AIAA Journal</em> 2021; 59(6):2113–2125. <a href="https://doi.org/10.2514/1.J059931" target="_blank" rel="noopener">doi:10.2514/1.J059931</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Fan-Angle-Effect-on-Sweeping-Jet-Impingement-Cooling.jpg" alt="Fan Angle Effect on Sweeping Jet Impingement Cooling" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 11 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="rotation-effect">
+        <div class="research-entry-header">
+          <span class="research-entry-num">11</span>
+          <div>
+            <h2 class="research-entry-title">Effect of Rotation on Sweeping Jet (Fluidic Actuator)</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Rotation Number</span>
+              <span class="research-tag">Coriolis Force</span>
+              <span class="research-tag">URANS</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Numerical investigation of rotation effects on a fluidic actuator flowfield at 5,000–15,000 rpm (Ro = 0.013–0.039) for both on-axis and off-axis configurations. Oscillation frequency drops with rotational speed due to reduced averaged velocity in the feedback channel. On-axis rotation induces out-of-plane motion from the Coriolis force. Off-axis rotation creates a local radial pressure gradient causing asymmetric jet trajectory in both streamwise and spanwise directions.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A., Ameri, A., Gregory, J., Bons, J.P., AIAA SciTech 2019, AIAA 2019-0885. <a href="https://doi.org/10.2514/6.2019-0885" target="_blank" rel="noopener">doi:10.2514/6.2019-0885</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Effect-of-Rotation-on-Sweeping-Jet-Fluidic-Actuator.jpg" alt="Effect of Rotation on Sweeping Jet Fluidic Actuator" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 12 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="crossflow">
+        <div class="research-entry-header">
+          <span class="research-entry-num">12</span>
+          <div>
+            <h2 class="research-entry-title">Crossflow Interaction of Oscillating Jet</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Jet in Crossflow</span>
+              <span class="research-tag">Inclination Angle</span>
+              <span class="research-tag">Alternating Vortices</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Numerical investigation of an oscillating jet interacting with crossflow at three inclination angles and three blowing ratios using Unsteady RANS. Two alternating streamwise vortices observed at all blowing ratios — opposite in rotation sense to the traditional counter-rotating vortex pair (CRVP) of a steady jet in crossflow. This reversed vortex pair is the key mechanism responsible for improved lateral coolant spreading observed in film cooling experiments.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A. et al., 55th AIAA Aerospace Sciences Meeting, 2017, AIAA 2017-1690. <a href="https://doi.org/10.2514/6.2017-1690" target="_blank" rel="noopener">doi:10.2514/6.2017-1690</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Crossflow-Interaction-of-Oscillating-Jet.jpg" alt="Crossflow Interaction of Oscillating Jet" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 13 — HAS IMAGE -->
+      <article class="research-entry fade-in" id="roughness">
+        <div class="research-entry-header">
+          <span class="research-entry-num">13</span>
+          <div>
+            <h2 class="research-entry-title">Roughness Effect on Fluidic Oscillator Performance</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Surface Roughness</span>
+              <span class="research-tag">Hotwire Anemometry</span>
+              <span class="research-tag">Schlieren Imaging</span>
+            </p>
+          </div>
+        </div>
+        <div class="research-entry-inner">
+          <div class="research-entry-text">
+            <p class="research-entry-body">
+              Experimental investigation of roughness effects on fluidic oscillator performance using two sandpapers (Ra = 25.28 µm, 46.54 µm) across several roughness and blockage configurations. Oscillation frequency measured by microphone; jet spreading angle by constant-temperature hotwire anemometry; external flow visualized by Schlieren imaging. Top/bottom wall roughness increases effective aspect ratio and oscillation frequency. Main channel roughness is detrimental — above a critical mass flow, blockage stops jet oscillation entirely.
+            </p>
+            <p class="research-entry-ref">
+              Hossain, M.A. et al., 55th AIAA Aerospace Sciences Meeting, 2017, AIAA 2017-0770. <a href="https://doi.org/10.2514/6.2017-0770" target="_blank" rel="noopener">doi:10.2514/6.2017-0770</a>
+            </p>
+          </div>
+          <div class="research-entry-image">
+            <img src="img/Roughness-Effect-on-Fluidic-Oscillator-Performance.jpg" alt="Roughness Effect on Fluidic Oscillator Performance" loading="lazy"/>
+          </div>
+        </div>
+      </article>
+
+      <!-- 14 — no image -->
+      <article class="research-entry fade-in" id="lpt-flow">
+        <div class="research-entry-header">
+          <span class="research-entry-num">14</span>
+          <div>
+            <h2 class="research-entry-title">Flow Control of a Transonic LPT Blade</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">LPT Cascade</span>
+              <span class="research-tag">Vortex Generator Jets</span>
+              <span class="research-tag">Separation Control</span>
+            </p>
+          </div>
+        </div>
+        <p class="research-entry-body">
+          Experimental investigation of freestream turbulence effects on separation control with steady vortex-generator jets (VGJs) on a highly loaded transonic LPT cascade at Mach 0.8. A spanwise row of discrete VGJs implemented at 60% chord. Higher freestream turbulence reduces VGJ effectiveness due to rapid laminar-to-turbulent transition. Higher blowing ratio also reduces effectiveness due to rapid dissipation of spanwise vortices.
+        </p>
+        <p class="research-entry-ref">
+          Sacco, C., Hossain, M.A., Bons, J.P., AIAA Aviation 2016, AIAA-2016-4089. <a href="https://doi.org/10.2514/6.2016-4089" target="_blank" rel="noopener">doi:10.2514/6.2016-4089</a>
+        </p>
+      </article>
+
+      <!-- ======= GROUP: COMBUSTION AND MULTIPHASE ======= -->
+      <div class="research-group-label" id="combustion-multiphase">Combustion and Multiphase</div>
+
+      <!-- 15 — no image -->
+      <article class="research-entry fade-in" id="pulsed-jet">
+        <div class="research-entry-header">
+          <span class="research-entry-num">15</span>
+          <div>
+            <h2 class="research-entry-title">Flow Measurement of a Pulsed Jet (Corneal Biomechanics)</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Hotwire Anemometry</span>
+              <span class="research-tag">Pulsed Flow</span>
+              <span class="research-tag">Biomedical Application</span>
+            </p>
+          </div>
+        </div>
+        <p class="research-entry-body">
+          Spatial and temporal profiles of an air puff (used to determine corneal air pressure in ophthalmology) measured by hot wire anemometry in the xy and xz planes. A photocell sensor synchronized velocity data with the Corvis ST pressure signal at 20 kHz over 81 measurement points (0–16 mm from nozzle). Demonstrated consistent velocity time history across 40 puffs and axisymmetric flow. Dynamic pressure data used to develop two novel corneal stiffness parameters.
+        </p>
+        <p class="research-entry-ref">
+          Roberts C, Mahmoud A, Bons J, Hossain A, et al., <em>J. Refractive Surgery</em> 2017; 33:266–273. <a href="https://doi.org/10.3928/1081597X-20161221-03" target="_blank" rel="noopener">doi:10.3928/1081597X-20161221-03</a>
+        </p>
+      </article>
+
+      <!-- entries 16–19 continue under Combustion and Multiphase -->
+
+      <!-- 16 — no image -->
+      <article class="research-entry fade-in" id="combustor-design">
+        <div class="research-entry-header">
+          <span class="research-entry-num">16</span>
+          <div>
+            <h2 class="research-entry-title">Design of a High-Intensity Turbulent Combustor</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Air-Methane</span>
+              <span class="research-tag">DES</span>
+              <span class="research-tag">TR-PIV</span>
+              <span class="research-tag">FEA</span>
+            </p>
+          </div>
+        </div>
+        <p class="research-entry-body">
+          Design and development of a combustion system for compressible, turbulent, premixed air-methane conditions with backward-facing step flame stabilization and optical accessibility via quartz windows on three sides. Preliminary flow field understanding via Detached Eddy Simulation (DES); structural integrity verified by FEA; validated by 10 kHz time-resolved PIV (TR-PIV).
+        </p>
+        <p class="research-entry-ref">
+          Hossain, M.A., Love, N.D., Choudhuri, A., <em>J. Mechanical Engineering Science</em> 2017. <a href="https://doi.org/10.1177/0954406218757565" target="_blank" rel="noopener">doi:10.1177/0954406218757565</a>
+        </p>
+      </article>
+
+      <!-- 17 — no image -->
+      <article class="research-entry fade-in" id="nox-syngas">
+        <div class="research-entry-header">
+          <span class="research-entry-num">17</span>
+          <div>
+            <h2 class="research-entry-title">NOx Emission of Syngas Combustion (IGCC)</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">NOx</span>
+              <span class="research-tag">Syngas (CO+H₂)</span>
+              <span class="research-tag">Eddy Dissipation Model</span>
+            </p>
+          </div>
+        </div>
+        <p class="research-entry-body">
+          Numerical study of NOx emissions for perfectly premixed syngas combustion (CO+H₂) in a gas turbine combustor using CFD. The Eddy Dissipation model in ANSYS Fluent was used for turbulent combustion at lean equivalence ratios with a multi-tube injector. Syngas from IGCC represents a promising flexible fuel, but high hydrogen content poses challenges for NOx control.
+        </p>
+        <p class="research-entry-ref">
+          Hossain, M.A., ASME Power Conference 2015, POWER2015-49388. <a href="https://doi.org/10.1115/POWER2015-49388" target="_blank" rel="noopener">doi:10.1115/POWER2015-49388</a>
+        </p>
+      </article>
+
+      <!-- 18 — no image -->
+      <article class="research-entry fade-in" id="nrel-shock">
+        <div class="research-entry-header">
+          <span class="research-entry-num">18</span>
+          <div>
+            <h2 class="research-entry-title">Shock Propagation on NREL Phase VI Wind Turbine Airfoil</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">Compressible Flow</span>
+              <span class="research-tag">NREL S809</span>
+              <span class="research-tag">k-ω SST</span>
+            </p>
+          </div>
+        </div>
+        <p class="research-entry-body">
+          Numeric analysis of compressible flow (M = 0.8) around the NREL Phase VI wind turbine blade airfoil S809 at seven angles of attack. Shock forms just after mid-span on the top surface and before mid-span on the bottom surface at zero angle of attack, translating with angle of attack changes. k-ω SST turbulent model in ANSYS FLUENT used to determine Cp, CL, and CD coefficients.
+        </p>
+        <p class="research-entry-ref">
+          Hossain, M.A., Huque, Z., Kammalapati, R.R., <em>J. Renewable Energy</em> 2013, Article ID 653103. <a href="https://doi.org/10.1155/2013/653103" target="_blank" rel="noopener">doi:10.1155/2013/653103</a>
+        </p>
+      </article>
+
+      <!-- 19 — no image -->
+      <article class="research-entry fade-in" id="fsi-wind">
+        <div class="research-entry-header">
+          <span class="research-entry-num">19</span>
+          <div>
+            <h2 class="research-entry-title">Fluid-Structure Interaction on a Wind Turbine Blade</h2>
+            <p class="research-entry-tags">
+              <span class="research-tag">FSI</span>
+              <span class="research-tag">Aeroelasticity</span>
+              <span class="research-tag">NREL Phase VI</span>
+            </p>
+          </div>
+        </div>
+        <p class="research-entry-body">
+          Numeric modeling of aerodynamic load on a wind turbine blade and its aeroelastic effects. Blade geometry modeled with actual twist and taper data, validated against NREL Phase VI data. Aerodynamic load from CFD transferred to structural analysis — non-linear span distribution dictates skin thickness and spar shape. Aerodynamic characteristics (CL, CP) change with blade deflection, affecting power output.
+        </p>
+        <p class="research-entry-ref">
+          Hossain, M.A., Huque, Z., Kammalapati, R.R., ASME IMECE 2013, IMECE2013-65647. <a href="https://doi.org/10.1115/IMECE2013-65647" target="_blank" rel="noopener">doi:10.1115/IMECE2013-65647</a>
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <h2 class="cta-title">Want to see the full publication list?</h2>
+        <p class="cta-desc">Browse all journal papers, conference proceedings, invited talks, and poster presentations.</p>
+        <a href="publications.html" class="btn btn-primary">View Publications</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div><p class="footer-brand-name">Arif Hossain, Ph.D.</p><p class="footer-brand-desc">Experimental fluid dynamics · Heat and Mass Transfer · CFD · Mixing and Spray</p></div>
+      <div><p class="footer-col-title">Navigate</p><ul class="footer-links" role="list"><li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><p class="footer-col-title">Contact</p><ul class="footer-links" role="list"><li><a href="mailto:arifme06@gmail.com">arifme06@gmail.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="footer-year"></span> Arif Hossain. All rights reserved.</span></div>
+  </div>
+</footer>
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teaching — Your Lab Name</title>
+  <meta name="description" content="Courses taught by [Your PI Name] at [Your University]."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/pages.css"/>
+</head>
+<body>
+
+<nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container"><div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="2"/>
+        <circle cx="20" cy="20" r="6" fill="var(--color-accent)"/>
+        <circle cx="20" cy="8"  r="3" fill="var(--color-accent-2)"/>
+        <circle cx="32" cy="26" r="3" fill="var(--color-accent-2)"/>
+        <circle cx="8"  cy="26" r="3" fill="var(--color-accent-2)"/>
+        <line x1="20" y1="14" x2="20" y2="11" stroke="var(--color-accent)" stroke-width="1.5"/>
+        <line x1="20" y1="26" x2="29" y2="23" stroke="var(--color-accent)" stroke-width="1.5"/>
+        <line x1="20" y1="26" x2="11" y2="23" stroke="var(--color-accent)" stroke-width="1.5"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-title">Your Lab Name</span>
+        <span class="nav-logo-sub">Est. 2021 · Your University</span>
+      </div>
+    </a>
+    <ul id="nav-menu" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button data-theme-toggle aria-label="Toggle dark mode"></button>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div></div>
+</nav>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner fade-in">
+        <span class="section-label">Education</span>
+        <h1 class="page-hero-title">Teaching</h1>
+        <!-- ===== Edit teaching philosophy ===== -->
+        <p class="page-hero-desc">
+          [Brief teaching philosophy — e.g., "I believe in hands-on, research-driven
+          education that equips students with both technical and critical thinking skills."]
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="teaching-page">
+    <div class="container container--narrow">
+
+      <div class="section-header fade-in">
+        <span class="section-label">Current &amp; Recent Courses</span>
+        <h2 class="section-title">Courses</h2>
+      </div>
+
+      <div class="course-list">
+
+        <!-- ===== Course 1 — duplicate to add more ===== -->
+        <article class="course-item fade-in">
+          <div>
+            <!-- ===== Edit course code and semester ===== -->
+            <div class="course-code">CH [###]</div>
+            <p class="course-semester">Spring 2025</p>
+          </div>
+          <div>
+            <!-- ===== Edit course title and description ===== -->
+            <h3 class="course-title">[Course Title]</h3>
+            <p class="course-desc">
+              [Brief course description — 2–3 sentences. What topics are covered?
+              Who is the target audience? What will students learn or be able to do?]
+            </p>
+          </div>
+        </article>
+
+        <!-- Course 2 -->
+        <article class="course-item fade-in">
+          <div>
+            <div class="course-code">CH [###]</div>
+            <p class="course-semester">Fall 2024</p>
+          </div>
+          <div>
+            <h3 class="course-title">[Course Title 2]</h3>
+            <p class="course-desc">
+              [Brief course description for course 2.]
+            </p>
+          </div>
+        </article>
+
+        <!-- Course 3 -->
+        <article class="course-item fade-in">
+          <div>
+            <div class="course-code">CH [###]</div>
+            <p class="course-semester">Spring 2024</p>
+          </div>
+          <div>
+            <h3 class="course-title">[Course Title 3]</h3>
+            <p class="course-desc">
+              [Brief course description for course 3.]
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="margin-top: var(--space-16);">
+        <div class="section-header fade-in">
+          <span class="section-label">Student Mentorship</span>
+          <h2 class="section-title">Mentoring Philosophy</h2>
+        </div>
+        <!-- ===== Edit mentoring philosophy ===== -->
+        <p class="fade-in" style="color: var(--color-text-muted); line-height: 1.8; font-size: var(--text-base);">
+          [1–2 paragraphs about your approach to mentoring PhD students and postdocs.
+          What do you value in a mentor–mentee relationship? How do you support
+          students' professional development and career goals?]
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <h2 class="cta-title">Interested in our research?</h2>
+        <p class="cta-desc">We welcome motivated students and researchers to join the lab.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div><p class="footer-brand-name">Your Lab Name</p><p class="footer-brand-desc">Developing [tools/methods] at the interface of [field A] and [field B].</p></div>
+      <div><p class="footer-col-title">Navigate</p><ul class="footer-links" role="list"><li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="team.html">Team</a></li><li><a href="publications.html">Publications</a></li></ul></div>
+      <div><p class="footer-col-title">Resources</p><ul class="footer-links" role="list"><li><a href="teaching.html">Teaching</a></li><li><a href="contact.html">Contact</a></li><li><a href="#" target="_blank" rel="noopener">Google Scholar</a></li></ul></div>
+      <div><p class="footer-col-title">Location</p><ul class="footer-links" role="list"><li>Department of [Your Dept]</li><li>Your University</li><li><a href="mailto:pi@university.edu">pi@university.edu</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="footer-year"></span> Your Lab Name.</span></div>
+  </div>
+</footer>
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>

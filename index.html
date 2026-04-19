@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arif Hossain, Ph.D. — Mechanical Engineering</title>
+  <meta name="description" content="Personal research website of Dr. Arif Hossain — CFD, turbine cooling, fire dynamics, and multiphase flow."/>
+  <meta property="og:title" content="Arif Hossain, Ph.D."/>
+  <meta property="og:description" content="Research Engineer specializing in CFD, turbine film cooling, fire dynamics simulation, and multiphase flow."/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <svg class="nav-logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="2"/>
+          <circle cx="20" cy="20" r="6" fill="var(--color-accent)"/>
+          <circle cx="20" cy="8"  r="3" fill="var(--color-accent-2)"/>
+          <circle cx="32" cy="26" r="3" fill="var(--color-accent-2)"/>
+          <circle cx="8"  cy="26" r="3" fill="var(--color-accent-2)"/>
+          <line x1="20" y1="14" x2="20" y2="11"  stroke="var(--color-accent)" stroke-width="1.5"/>
+          <line x1="20" y1="26" x2="29" y2="23"  stroke="var(--color-accent)" stroke-width="1.5"/>
+          <line x1="20" y1="26" x2="11" y2="23"  stroke="var(--color-accent)" stroke-width="1.5"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">Arif Hossain</span>
+          <span class="nav-logo-sub">Ph.D. Mechanical Engineering </span>
+        </div>
+      </a>
+      <ul id="nav-menu" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button data-theme-toggle aria-label="Toggle dark mode"></button>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="hero-bg-svg" viewBox="0 0 1400 700" fill="none" preserveAspectRatio="xMidYMid slice">
+        <rect width="1400" height="700" fill="#0b1f38"/>
+        <g opacity="0.65">
+          <!-- Turbine blade cross-section suggestion -->
+          <ellipse cx="700" cy="300" rx="320" ry="80" stroke="#5b9bd5" stroke-width="1" opacity="0.2" fill="none"/>
+          <ellipse cx="700" cy="300" rx="220" ry="55" stroke="#5b9bd5" stroke-width="1" opacity="0.15" fill="none"/>
+          <!-- Molecular/flow nodes -->
+          <circle cx="180" cy="160" r="45" fill="none" stroke="#5b9bd5" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="180" cy="160" r="22" fill="#1a3a5c" stroke="#5b9bd5" stroke-width="1"/>
+          <circle cx="180" cy="160" r="8"  fill="#5b9bd5" opacity="0.85"/>
+
+          <circle cx="680" cy="190" r="60" fill="none" stroke="#5b9bd5" stroke-width="1.5" opacity="0.35"/>
+          <circle cx="680" cy="190" r="30" fill="#1a3a5c" stroke="#5b9bd5" stroke-width="1"/>
+          <circle cx="680" cy="190" r="11" fill="#5b9bd5" opacity="0.9"/>
+
+          <circle cx="1100" cy="280" r="50" fill="none" stroke="#c9822a" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="1100" cy="280" r="24" fill="#1a3a5c" stroke="#c9822a" stroke-width="1"/>
+          <circle cx="1100" cy="280" r="9"  fill="#c9822a" opacity="0.8"/>
+
+          <circle cx="380" cy="460" r="38" fill="none" stroke="#7ecfb6" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="380" cy="460" r="16" fill="#1a3a5c" stroke="#7ecfb6" stroke-width="1"/>
+          <circle cx="380" cy="460" r="6"  fill="#7ecfb6" opacity="0.85"/>
+
+          <circle cx="900" cy="500" r="52" fill="none" stroke="#5b9bd5" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="900" cy="500" r="26" fill="#1a3a5c" stroke="#5b9bd5" stroke-width="1"/>
+          <circle cx="900" cy="500" r="9"  fill="#5b9bd5" opacity="0.8"/>
+
+          <circle cx="1260" cy="130" r="32" fill="none" stroke="#c9822a" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="1260" cy="130" r="14" fill="#1a3a5c" stroke="#c9822a" stroke-width="1"/>
+          <circle cx="1260" cy="130" r="5"  fill="#c9822a" opacity="0.8"/>
+
+          <circle cx="540" cy="600" r="28" fill="none" stroke="#7ecfb6" stroke-width="1.5" opacity="0.45"/>
+          <circle cx="540" cy="600" r="12" fill="#1a3a5c" stroke="#7ecfb6" stroke-width="1"/>
+          <circle cx="540" cy="600" r="5"  fill="#7ecfb6" opacity="0.8"/>
+
+          <!-- Flow streamlines -->
+          <path d="M100 350 Q400 250 700 300 Q1000 350 1300 220" stroke="#5b9bd5" stroke-width="1" opacity="0.15" fill="none"/>
+          <path d="M100 400 Q400 320 700 360 Q1000 400 1300 300" stroke="#5b9bd5" stroke-width="1" opacity="0.1" fill="none"/>
+          <path d="M100 450 Q400 400 700 420 Q1000 450 1300 380" stroke="#7ecfb6" stroke-width="1" opacity="0.1" fill="none"/>
+
+          <!-- Connection lines -->
+          <line x1="180" y1="160" x2="680" y2="190" stroke="#5b9bd5" stroke-width="1" opacity="0.2"/>
+          <line x1="680" y1="190" x2="1100" y2="280" stroke="#5b9bd5" stroke-width="1" opacity="0.18"/>
+          <line x1="680" y1="190" x2="380" y2="460" stroke="#7ecfb6" stroke-width="1" opacity="0.18"/>
+          <line x1="380" y1="460" x2="900" y2="500" stroke="#5b9bd5" stroke-width="1" opacity="0.18"/>
+          <line x1="1100" y1="280" x2="1260" y2="130" stroke="#c9822a" stroke-width="1" opacity="0.2"/>
+          <line x1="900" y1="500" x2="540" y2="600" stroke="#7ecfb6" stroke-width="1" opacity="0.18"/>
+
+          <!-- Small satellites -->
+          <circle cx="440" cy="270" r="5" fill="#5b9bd5" opacity="0.6"/>
+          <circle cx="850" cy="340" r="4" fill="#c9822a" opacity="0.6"/>
+          <circle cx="140" cy="350" r="4" fill="#7ecfb6" opacity="0.6"/>
+          <circle cx="1050" cy="480" r="5" fill="#5b9bd5" opacity="0.6"/>
+          <circle cx="700" cy="420" r="4" fill="#c9822a" opacity="0.5"/>
+        </g>
+        <path d="M0 620 Q350 555 700 600 Q1050 645 1400 575 L1400 700 L0 700Z" fill="#0b1f38" opacity="0.75"/>
+      </svg>
+    </div>
+
+    <div class="hero-content container">
+      <p class="hero-eyebrow">Welcome to my Website</p>
+      <h1 class="hero-title">Arif Hossain, <span class="hero-phd">Ph.D.</span></h1>
+      <p class="hero-subtitle">
+        Research Engineer specializing in Fluid Dynamics · Heat and Mass Transfer · CFD · Film Cooling · Multiphase Flow · Mixing and Spray Technology
+      </p>
+      <div class="hero-ctas">
+        <a href="research.html" class="btn btn-primary">Explore Research</a>
+        <a href="publications.html" class="btn btn-outline">View Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar" aria-label="Career highlights">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-count="15" data-suffix="+">0+</span>
+          <span class="stat-label">Research Projects</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-count="40" data-suffix="+">0+</span>
+          <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-count="1100" data-suffix="+">0+</span>
+          <span class="stat-label">Citation</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-count="10" data-suffix="+">0+</span>
+          <span class="stat-label">Filed Patent</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / BIO -->
+  <section class="pi-section" id="about">
+    <div class="container">
+      <div class="pi-inner fade-in">
+        <div class="pi-photo-wrap">
+          <img src="img/arif-hossain.jpg" alt="Dr. Arif Hossain" class="pi-photo" width="280" height="320" loading="lazy"/>
+        </div>
+        <div class="pi-content">
+          <span class="section-label">About Me</span>
+          <h2 class="pi-name">Arif Hossain</h2>
+          <p class="pi-title">Associate Research Scientist — Fluids and Solids Engineering, Core R&amp;D, Dow Chemical<br/>Ph.D., Mechanical Engineering · The Ohio State University</p>
+          <p class="pi-bio">
+            I completed my B.Sc. in Mechanical Engineering from Bangladesh University of Engineering and Technology (BUET) in 2012. I then worked as a Lecturer in the Department of Mechanical and Production Engineering at Ahsanullah University of Science and Technology (AUST), Dhaka. I received my Master's in Mechanical Engineering from the University of Texas at El Paso in 2015, where I worked as a Graduate Research Assistant at the NASA center for Space Exploration Technology Research (cSETR), studying turbulent flow–flame interaction.
+          </p>
+          <p class="pi-bio">
+            I completed my Ph.D. in Mechanical Engineering at The Ohio State University, working as a graduate research associate at the Aerospace Research Center (ARC) under Professor Jeffrey Bons in the Turbine Aerothermodynamics Lab. My doctoral work focused on developing innovative turbine cooling technology with micro-architectures enabled by Direct Metal Laser Sintering (DMLS), including a novel sweeping-jet film cooling scheme using fluidic oscillators for wider lateral coolant coverage.
+          </p>
+          <p class="pi-bio">
+           In my current role at Dow’s Core R&D – Fluids & Solids Engineering, I lead experimental design, develop custom OEM methods, and apply high-speed imaging and spray diagnostics to optimize polymer processing. I translate hydrodynamic and thermal models into data-backed recommendations that raise product performance across multiple Dow businesses. 
+          </p>
+          <div class="pi-links">
+            <a href="publications.html" class="btn btn-ghost btn-sm">View Publications →</a>
+            <a href="mailto:arifme06@gmail.com" class="pi-email">arifme06@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education-section" id="education">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+        <div class="edu-item fade-in">
+          <div class="edu-year">2020</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Ph.D. in Mechanical Engineering</h3>
+            <p class="edu-school">The Ohio State University, Columbus, Ohio, USA</p>
+            <p class="edu-note">Turbine Aerothermodynamics Lab · Advisor: Prof. Jeffrey Bons</p>
+          </div>
+        </div>
+        <div class="edu-item fade-in">
+          <div class="edu-year">2018</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">M.S. in Mechanical and Aerospace Engineering</h3>
+            <p class="edu-school">The Ohio State University, Columbus, Ohio, USA</p>
+          </div>
+        </div>
+        <div class="edu-item fade-in">
+          <div class="edu-year">2015</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">M.S. in Mechanical Engineering</h3>
+            <p class="edu-school">The University of Texas at El Paso (UTEP), Texas, USA</p>
+            <p class="edu-note">NASA center for Space Exploration Technology Research (cSETR)</p>
+          </div>
+        </div>
+        <div class="edu-item fade-in">
+          <div class="edu-year">2012</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">B.S. in Mechanical Engineering</h3>
+            <p class="edu-school">Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH OVERVIEW -->
+  <section class="research-overview" id="research">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Research Focus Areas</h2>
+        <p class="section-subtitle">
+          My research spans turbine aerothermodynamics, computational fluid dynamics, fire dynamics simulation,
+          and spray/multiphase flow — bridging fundamental experiments with high-fidelity numerical methods.
+        </p>
+      </div>
+
+      <div class="research-cards">
+
+        <article class="research-card fade-in">
+          <div class="research-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M8 40 Q24 10 40 40" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+              <path d="M14 32 Q24 18 34 32" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>
+              <circle cx="24" cy="22" r="4" fill="currentColor" opacity="0.4"/>
+              <path d="M24 8 v6 M12 12 l4 4 M36 12 l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="research-card-title">Experimental Fluid and Heat Transfer</h3>
+          <p class="research-card-desc">
+            Sweeping jet film cooling, impingement cooling, and double-wall pin-fin configurations for gas turbine nozzle guide vanes enabled by additive manufacturing (DMLS/SLA).
+          </p>
+          <a href="research.html#turbine-cooling" class="research-card-link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <article class="research-card fade-in">
+          <div class="research-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="8" width="32" height="32" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 28 L20 22 L24 26 L28 18 L32 24" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/>
+              <circle cx="16" cy="28" r="2" fill="currentColor"/>
+              <circle cx="32" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="research-card-title">Computational Fluid Dynamics (CFD)</h3>
+          <p class="research-card-desc">
+            Unsteady RANS, Large Eddy Simulation (LES), and conjugate heat transfer modeling of fluidic oscillators, fire dynamics (FDS), and multiphase spray flows using StarCCM+, OpenFOAM, and ANSYS Fluent.
+          </p>
+          <a href="research.html#cfd" class="research-card-link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <article class="research-card fade-in">
+          <div class="research-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 8 C24 8 14 18 14 28 a10 10 0 0 0 20 0 C34 18 24 8 24 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M24 24 C24 24 20 28 20 32 a4 4 0 0 0 8 0 C28 28 24 24 24 24Z" fill="currentColor" opacity="0.4"/>
+              <path d="M16 20 Q10 30 14 38 M32 20 Q38 30 34 38" stroke="currentColor" stroke-width="1.5" opacity="0.5" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="research-card-title">Spray and Mixing Technology</h3>
+          <p class="research-card-desc">
+            Fire safety analysis using Fire Dynamics Simulator (FDS) and PyroSim, spray nozzle design, multiphase VOF-to-DPM flow modeling, and thermal characterization with infrared cameras.
+          </p>
+          <a href="research.html#fire-spray" class="research-card-link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+      </div>
+
+      <div class="research-overview-footer fade-in">
+        <a href="research.html" class="btn btn-ghost">View all research →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT PUBLICATIONS HIGHLIGHT -->
+  <section class="news-section" id="highlights">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Selected Work</span>
+        <h2 class="section-title">Recent Publications</h2>
+      </div>
+
+      <div class="news-grid">
+
+        <article class="news-card fade-in">
+          <div class="news-card-meta">
+            <span class="news-tag">Journal</span>
+            <time class="news-date" datetime="2021">2021</time>
+          </div>
+          <h3 class="news-card-title">
+            <a href="https://doi.org/10.1115/1.4049618" target="_blank" rel="noopener">
+              Innovative Cooling Schemes on an Additively Manufactured Engine Scale Turbine NGV
+            </a>
+          </h3>
+          <p class="news-card-desc">
+            Hossain, M.A., Ameri, A., Gregory, J., Bons, J.P. — <em>ASME J. Turbomach.</em> 143(5), 2021.
+          </p>
+          <a href="https://doi.org/10.1115/1.4049618" class="news-read-more" target="_blank" rel="noopener">View paper →</a>
+        </article>
+
+        <article class="news-card fade-in">
+          <div class="news-card-meta">
+            <span class="news-tag">Journal</span>
+            <time class="news-date" datetime="2021">2021</time>
+          </div>
+          <h3 class="news-card-title">
+            <a href="https://doi.org/10.2514/1.J059931" target="_blank" rel="noopener">
+              Effects of Exit Fan Angle on Sweeping Jet Impingement Heat Transfer
+            </a>
+          </h3>
+          <p class="news-card-desc">
+            Hossain, M.A., Ameri, A., Gregory, J., Bons, J.P. — <em>AIAA Journal</em> 59(6), 2021.
+          </p>
+          <a href="https://doi.org/10.2514/1.J059931" class="news-read-more" target="_blank" rel="noopener">View paper →</a>
+        </article>
+
+        <article class="news-card fade-in">
+          <div class="news-card-meta">
+            <span class="news-tag">Invited Talk</span>
+            <time class="news-date" datetime="2019">2019</time>
+          </div>
+          <h3 class="news-card-title">
+            <a href="contact.html">Invited Talk — DOW Chemical, Lake Jackson, TX</a>
+          </h3>
+          <p class="news-card-desc">
+            "Sweeping jet film cooling and impingement cooling" — October 2019, Dow Chemical; also presented at Boeing R&amp;D and Ohio Supercomputer Center.
+          </p>
+          <a href="publications.html#talks" class="news-read-more">All talks →</a>
+        </article>
+
+      </div>
+
+      <div class="news-footer fade-in">
+        <a href="publications.html" class="btn btn-ghost">Full publication list →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <h2 class="cta-title">Interested in collaborating?</h2>
+        <p class="cta-desc">
+          I'm always open to research collaborations and technical discussions in experimental method development, CFD, heat and mass transfer, and mixing and spray.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-name">Arif Hossain, Ph.D.</p>
+        <p class="footer-brand-desc">
+          Experimental fluid dynamics · Heat and Mass Transfer · CFD · Mixing and Spray
+        </p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links" role="list">
+          <li><a href="mailto:arifme06@gmail.com">arifme06@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> Arif Hossain. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
