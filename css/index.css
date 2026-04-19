@@ -15,10 +15,34 @@
   inset: 0;
   z-index: 0;
 }
-.hero-bg-svg {
+/* AI-generated photo background */
+.hero-bg-photo {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  opacity: 0.55;
+}
+/* Gradient overlay — left side darker so text stays legible */
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 22, 42, 0.82) 0%,
+    rgba(10, 22, 42, 0.60) 45%,
+    rgba(10, 22, 42, 0.25) 100%
+  );
+}
+.hero-bg-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
 }
 .hero-content {
   position: relative;

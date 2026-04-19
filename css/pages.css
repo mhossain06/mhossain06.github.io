@@ -4,8 +4,37 @@
 
 /* ---- Page hero ---- */
 .page-hero {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #0a1e35 100%);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0d2038 0%, #0a1626 100%);
   padding-block: clamp(var(--space-12), 8vw, var(--space-20));
+}
+/* Photo background layer */
+.page-hero-bg-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.38;
+  z-index: 0;
+}
+/* Gradient overlay — ensures text stays readable */
+.page-hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(8, 18, 32, 0.88) 0%,
+    rgba(8, 18, 32, 0.65) 50%,
+    rgba(8, 18, 32, 0.30) 100%
+  );
+  z-index: 1;
+}
+.page-hero-inner {
+  position: relative;
+  z-index: 2;
 }
 .page-hero-inner { max-width: 720px; }
 .page-hero-title {
